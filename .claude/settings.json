@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_evaluate",
+      "mcp__serena-mcp-server__list_dir",
+      "mcp__serena-mcp-server__find_file",
+      "mcp__serena-mcp-server__read_file"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "context7"
+  ]
+}
