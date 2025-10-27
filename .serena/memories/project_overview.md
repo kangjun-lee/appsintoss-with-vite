@@ -1,22 +1,22 @@
 # Project Overview
 
-## Project Name
-**Pickly (픽클리)** - Lottery Machine
+## Project Type
+**Apps-in-Toss (AIT) Project Template**
 
 ## Purpose
-A web-based lottery/random picker application that allows users to:
-- Create custom lottery wheels with multiple items
-- Assign different probabilities to each item (normal, 2x, 0.5x)
-- Spin the wheel to randomly select a winner
-- View history of past lottery results
-- Customize item colors and names
+A minimal web application template for building Apps-in-Toss (AIT) services. This template provides:
+- Basic project structure for AIT development
+- Toss Design System (TDS) integration
+- Vite build configuration
+- TypeScript setup with strict mode
+- ESLint configuration
+- Basic routing setup with React Router
 
-## Key Features
-- Interactive spinning wheel visualization
-- Probability-based random selection
-- Result history tracking
-- Mobile-optimized UI using Toss Design System
-- Demo mode for testing
+## Current State
+This is a starter template with minimal implementation:
+- Single home page with basic TDS components
+- Empty directories for components, hooks, types, and utilities
+- Ready to be extended with custom features
 
 ## Target Platform
 Mobile web application built using the Apps-in-Toss (AIT) framework, designed to run within the Toss super-app ecosystem.

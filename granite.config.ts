@@ -1,16 +1,16 @@
 import { defineConfig } from "@apps-in-toss/web-framework/config";
 
 export default defineConfig({
-  appName: "pickly",
+  appName: "demo-app",
   brand: {
-    displayName: "픽클리",
-    primaryColor: "#18a5a5",
+    displayName: "테스트 앱",
+    primaryColor: "#3182f6",
     // public/icon.png 로 저장 후, web.host, port 와 동일한 값 사용
-    icon: "http://100.65.50.87:5173/logo.png",
+    icon: "http://localhost:5173/logo.png",
     bridgeColorMode: "basic",
   },
   web: {
-    host: "100.65.50.87",
+    host: "localhost",
     port: 5173,
     commands: {
       dev: "vite --host",

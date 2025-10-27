@@ -19,24 +19,15 @@ lottery-machine/
 ```
 src/
 ├── components/       # Reusable React components
-│   ├── horizontal-padding.tsx
-│   ├── probability-sheet.tsx
-│   └── wheel-canvas.tsx
-├── hooks/            # Custom React hooks
-│   ├── use-history.ts
-│   └── use-lottery-state.tsx
+│   └── horizontal-padding.tsx
+├── hooks/            # Custom React hooks (empty, ready for implementation)
+│   └── .gitkeep
 ├── pages/            # Page-level components (routes)
-│   ├── demo-page.tsx
-│   ├── history-page.tsx
-│   ├── home-page.tsx
-│   ├── result-page.tsx
-│   ├── setup-page.tsx
-│   └── spin-page.tsx
-├── types/            # TypeScript type definitions
-│   └── lottery.ts
-├── utils/            # Utility functions
-│   ├── colors.ts
-│   └── storage.ts
+│   └── home-page.tsx
+├── types/            # TypeScript type definitions (empty, ready for implementation)
+│   └── .gitkeep
+├── utils/            # Utility functions (empty, ready for implementation)
+│   └── .gitkeep
 ├── app.tsx           # Main App component with routing
 ├── main.tsx          # Application entry point
 └── index.css         # Global styles
@@ -46,7 +37,7 @@ src/
 
 ### Entry Points
 - **main.tsx**: Application entry point, renders the App component
-- **app.tsx**: Main App component with router and providers setup
+- **app.tsx**: Main App component with router and TDS provider setup
 - **index.html**: HTML template
 
 ### Configuration Files
@@ -58,26 +49,26 @@ src/
 - **eslint.config.js**: ESLint configuration
 - **package.json**: Project dependencies and scripts
 
-### Core Domain
-- **src/types/lottery.ts**: Core type definitions for lottery items, results, and state
-- **src/hooks/use-lottery-state.tsx**: Main state management hook/provider
-- **src/utils/storage.ts**: Local storage utilities
-- **src/utils/colors.ts**: Color utilities
+### Components
+- **src/components/horizontal-padding.tsx**: Utility component for horizontal padding (TDS-compatible)
+- **src/pages/home-page.tsx**: Template home page with basic TDS components
 
 ## Routing Structure
-The application uses React Router with the following routes:
-- `/` - Home page (entry point)
-- `/setup` - Setup lottery items
-- `/spin` - Spin the wheel animation
-- `/result` - Show lottery result
-- `/history` - View past results
-- `/demo` - Demo mode
+The application uses React Router with minimal routes:
+- `/` - Home page (template starting page)
+
+Additional routes can be added as needed.
 
 ## State Management
-- Uses React Context API with custom providers
-- `LotteryProvider` wraps the entire application
-- `TDSMobileAITProvider` provides Toss Design System integration
+- Uses React Context API with TDSMobileAITProvider
+- Custom providers and hooks can be added in `src/hooks/`
 
 ## Public Assets
 - **public/logo.png**: Application icon
 - Static files served directly by Vite
+
+## Empty Directories (Ready for Implementation)
+The following directories contain only `.gitkeep` files and are ready for custom implementation:
+- `src/hooks/` - For custom React hooks
+- `src/types/` - For TypeScript type definitions
+- `src/utils/` - For utility functions
